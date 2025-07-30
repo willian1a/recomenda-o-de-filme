@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Galeria de Filmes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .movie-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 400px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+            display: block;
+        }
+
+        .movie-info {
+            padding: 15px;
+        }
+
+        .movie-info h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #0056b3;
+        }
+
+        .movie-info p {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #777;
+            font-size: 0.8em;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Galeria de Filmes Incríveis</h1>
+        <p>Confira alguns dos meus filmes favoritos!</p>
+    </header>
+
+    <main class="container">
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/300x450?text=Capa+Filme+1" alt="Capa do Filme 1">
+            <div class="movie-info">
+                <h2>Nome do Filme 1</h2>
+                <p>Uma breve descrição sobre o filme 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/300x450?text=Capa+Filme+2" alt="Capa do Filme 2">
+            <div class="movie-info">
+                <h2>Nome do Filme 2</h2>
+                <p>Outra descrição interessante sobre o filme 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://via.placeholder.com/300x450?text=Capa+Filme+3" alt="Capa do Filme 3">
+            <div class="movie-info">
+                <h2>Nome do Filme 3</h2>
+                <p>Mais uma descrição para o filme 3, destacando seus pontos fortes. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+        </div>
+
+        </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Galeria de Filmes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
